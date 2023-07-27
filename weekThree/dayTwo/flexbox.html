@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex box</title>
+    <style>
+      .flex {
+        width: 100%;
+        background-color: blue;
+        height: 40vh;
+        display: flex;
+        justify-content: space-around;
+        /* justify-content: space-evenly; */
+        /* justify-content: center; */
+        /* justify-content: flex-end; */
+        /* justify-content: flex-start; */
+        align-items: center;
+        /* align-items: flex-end; */
+        /* flex-direction: column; */
+        /* gap: 10px; */
+        /* justify-content: space-around;
+        align-items: center; */
+        flex-wrap: wrap;
+        /* flex-flow: row wrap; */
+      }
+
+      .flex :nth-child(n) {
+        width: 25%;
+        min-width: 200px;
+        flex-grow: 1;
+      }
+
+      .flex :nth-child(2) {
+        /* height: 5em; */
+        /* align-self: stretch; */
+        align-self: flex-end;
+      }
+
+      .border {
+        border: 2px solid red;
+        padding: 0.2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>flex box css</h2>
+
+    <section class="flex">
+      <div class="one border"><small>i am meant be flexed</small></div>
+      <div class="two border"><small>i am meant be flexed</small></div>
+      <div class="three border"><small>i am meant be flexed</small></div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign</title>
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <main class="main">
+          <div class="form_wrapper">
+            <header class="heading_wrapper">
+              <h2>registration form</h2>
+            </header>
+            <form class="form">
+              <div class="form_input_wrap">
+                <div class="input_wrap">
+                  <label for="fname">first name</label>
+                  <input type="text" id="fname" placeholder="johnny" />
+                </div>
+                <div class="input_wrap">
+                  <label for="lname">last name</label>
+                  <input type="text" id="lname" placeholder="johnny" />
+                </div>
+              </div>
+
+              <div class="form_input_wrap">
+                <div class="input_wrap">
+                  <label for="bday">birth day</label>
+                  <input type="date" id="bday" placeholder="johnny" />
+                </div>
+                <div class="input_wrap gender">
+                  <label for="gender">gender</label>
+                  <div class="input_wrap_radios">
+                    <input type="radio" id="lname" /><small>male</small>
+                    <input type="radio" id="lname" /><small>female</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form_input_wrap">
+                <div class="input_wrap">
+                  <label for="email">email</label>
+                  <input type="email" id="email" placeholder="johnny" />
+                </div>
+                <div class="input_wrap">
+                  <label for="num">phone number</label>
+                  <input type="number" id="num" />
+                </div>
+              </div>
+
+              <div class="form_input_wrap">
+                <div class="input_wrap">
+                  <label for="subject">subject</label>
+                  <select>
+                    <option value="economy">economy class</option>
+                    <option value="business">business class</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form_btn">
+                <button>submit</button>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

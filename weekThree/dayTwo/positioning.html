@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>positioning</title>
+  </head>
+
+  <style>
+    .container {
+      width: 100%;
+      min-height: 80vh;
+      background-color: red;
+    }
+
+    .one {
+      position: static;
+    }
+
+    .twoWrap {
+      width: 20%;
+      height: 5em;
+      background-color: green;
+    }
+    .two {
+      position: relative;
+      top: 70%;
+      /* bottom: 30%; */
+      /* left: 30%; */
+      /* right: 5%; */
+    }
+
+    .threeWrap {
+      width: 20%;
+      height: 5em;
+      background-color: yellow;
+    }
+
+    .three {
+      position: absolute;
+      /* top: 10%; */
+      bottom: 5%;
+      /* left: 30%; */
+      /* right: 5%; */
+    }
+
+    .fourWrap {
+      width: 20%;
+      height: 5em;
+      /* overflow-y: scroll;
+      overflow-x: scroll; */
+      overflow: auto;
+      background-color: orange;
+    }
+
+    .four {
+      position: fixed;
+      color: blue;
+      background-color: purple;
+      z-index: -1;
+    }
+
+    .fiveWrap {
+      width: 40%;
+      height: 5em;
+      background-color: pink;
+      overflow: auto;
+      position: absolute;
+      left: 50%;
+      top: 10%;
+    }
+
+    .five {
+      background-color: green;
+      width: 100%;
+      position: relative;
+      overflow: scroll;
+      height: 10em;
+    }
+
+    .five thead {
+      position: sticky;
+      top: 0%;
+    }
+
+    .head {
+      transform: translate(30%, 40%);
+    }
+  </style>
+  <body>
+    <h2 class="head">positioning in css</h2>
+
+    <div class="container">
+      <div class="oneWrap"><small class="one">Lorem, </small></div>
+      <div class="twoWrap"><small class="two">Lorem, ipsum </small></div>
+
+      <div class="threeWrap">
+        <small class="three">Lorem, ipsum dolor.</small>
+      </div>
+
+      <div class="fourWrap">
+        <small class="four">Lorem, ipsum dolor. for</small>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
+          cupiditate, officia excepturi quisquam dicta perferendis.
+        </p>
+        <p>
+          Minima repudiandae molestiae autem, vero fuga porro praesentium
+          accusamus sequi accusantium voluptates id quam et!
+        </p>
+        <p>
+          Quisquam pariatur commodi molestias, esse laboriosam doloribus officia
+          numquam sapiente amet dolorum eligendi dignissimos nostrum.
+        </p>
+        <p>
+          In aliquid provident harum sit optio, molestiae, dicta libero
+          accusantium labore numquam voluptas debitis. Earum. Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Cum ratione et dignissimos,
+          atque similique animi nemo praesentium tenetur a dolor voluptate totam
+          est aperiam voluptatum sunt. Pariatur a non, quasi consequuntur
+          distinctio ad laudantium excepturi blanditiis modi rem cupiditate quia
+          alias voluptatem ullam nobis odio sed at magnam corporis qui.
+        </p>
+        <p>
+          Autem ipsum accusantium minus provident voluptatibus nostrum,
+          doloremque totam optio praesentium et unde voluptates quae.
+        </p>
+        <p>
+          Consequuntur architecto sit quaerat corrupti excepturi dignissimos
+          praesentium dolorum exercitationem. Nesciunt, fugit. Distinctio, qui
+          nam.
+        </p>
+        <p>
+          Nam deserunt, doloremque rerum animi aspernatur voluptates laboriosam,
+          earum porro nulla sed quam nostrum tempore?
+        </p>
+        <p>
+          Tenetur nobis commodi mollitia expedita totam, exercitationem eum
+          culpa quia nesciunt suscipit quos, id repellat?
+        </p>
+        <p>
+          Cum optio fuga laborum numquam reprehenderit ut consectetur? Et
+          corrupti perferendis ab omnis nulla iure?
+        </p>
+        <p>
+          Et eum qui, recusandae nisi eaque pariatur assumenda minus
+          accusantium, excepturi rerum odit, voluptate sequi.
+        </p>
+        <p>
+          Tempora, saepe eos harum ratione cumque et amet odit laudantium culpa
+          totam recusandae magni neque!
+        </p>
+        <p>
+          Numquam aut impedit aliquid accusamus eaque ab magni dolores eos. Quia
+          corrupti perspiciatis ad sapiente.
+        </p>
+        <p>
+          Consequatur, adipisci! Similique repellat voluptatem magnam voluptate?
+          Ab, numquam iusto! Consectetur quisquam minima ipsum sed!
+        </p>
+        <p>
+          Fuga necessitatibus veritatis commodi nulla esse. Consequatur adipisci
+          dignissimos facilis suscipit corporis laborum consectetur
+          necessitatibus.
+        </p>
+        <p>
+          Minus blanditiis aut ut pariatur quae rem quo maxime quidem similique
+          nesciunt facilis, molestiae id?
+        </p>
+        <p>
+          Atque unde corrupti ex quo eius ipsam quae, ad sunt nostrum quos
+          praesentium tenetur impedit.
+        </p>
+        <p>
+          Harum veniam blanditiis doloribus, autem amet fugit? Recusandae harum
+          aliquam sapiente facilis officia molestiae optio?
+        </p>
+        <p>
+          Quos consequatur deserunt officiis ducimus exercitationem eaque
+          nostrum esse autem blanditiis? Architecto repellat suscipit maiores.
+        </p>
+        <p>
+          Eaque voluptatum quasi corrupti cupiditate sequi voluptas itaque. Quae
+          in necessitatibus unde, ullam eos aspernatur.
+        </p>
+        <p>
+          Illum natus aut beatae! Atque commodi cumque ipsa dicta aspernatur,
+          hic debitis adipisci perspiciatis mollitia?
+        </p>
+        <p>
+          Voluptatibus maiores, deserunt cum obcaecati natus, et blanditiis
+          autem voluptas dolore vitae quidem laboriosam dolores.
+        </p>
+        <p>
+          Culpa temporibus eos nostrum eius fugiat at sequi aut deleniti,
+          cupiditate eaque, sapiente iste quisquam.
+        </p>
+        <p>
+          Pariatur corporis nobis debitis iusto exercitationem numquam incidunt,
+          enim soluta modi totam sed esse suscipit?
+        </p>
+        <p>
+          Facilis reprehenderit dolore ipsum. Esse aut error consequatur dicta
+          eveniet ut odit et, libero nesciunt.
+        </p>
+        <p>
+          Inventore, sint sapiente animi ipsum deserunt ad excepturi iure
+          praesentium adipisci modi, ducimus enim eos.
+        </p>
+        <p>
+          Odit dolor laboriosam enim quaerat, excepturi architecto magni,
+          ratione consectetur aperiam omnis illo id! Cumque!
+        </p>
+        <p>
+          Tenetur, earum soluta! Impedit laudantium repudiandae eum ipsam facere
+          est illum deleniti at? Maxime, similique!
+        </p>
+        <p>
+          Aut minus autem culpa, tempora labore mollitia. Officiis in molestias
+          non ullam, nemo accusantium ipsum.
+        </p>
+        <p>
+          Commodi quidem asperiores, nisi omnis maxime at minus voluptas
+          quisquam consequatur, optio dolores reprehenderit quo!
+        </p>
+        <p>
+          Reprehenderit fugiat, facilis deserunt vero consequatur quam ullam
+          nulla necessitatibus ratione fugit aperiam! Veniam, dolorem?
+        </p>
+        <p>
+          Quibusdam voluptatibus ipsa vel corrupti fugit. Debitis nobis vitae
+          fugiat recusandae? Totam sint cupiditate provident.
+        </p>
+        <p>
+          Velit, itaque perferendis voluptas fuga cum laboriosam hic ut
+          voluptatem quia possimus asperiores provident consequuntur.
+        </p>
+        <p>
+          Deserunt temporibus omnis recusandae voluptas nam quibusdam soluta
+          explicabo. Delectus expedita consequuntur eius earum repellendus.
+        </p>
+        <p>
+          Quis, possimus! Reprehenderit, aliquid, voluptas voluptate aut
+          praesentium possimus consectetur ullam neque quod libero in?
+        </p>
+        <p>
+          In quaerat similique veniam nam officiis id nihil, ex, ipsam, maiores
+          vero rerum harum assumenda.
+        </p>
+        <p>
+          Corrupti quas aliquid iusto exercitationem cum? Dolor, quidem eaque!
+          Est, nihil. Deserunt voluptates voluptatem laboriosam?
+        </p>
+        <p>
+          Ipsa, nulla nostrum! Obcaecati beatae sed soluta necessitatibus quae
+          tempora eum dicta ab veritatis amet.
+        </p>
+        <p>
+          Natus quidem et laborum quo consequatur deleniti laudantium cupiditate
+          dolor maiores earum. Perspiciatis, ratione amet.
+        </p>
+        <p>
+          Pariatur exercitationem debitis eum accusamus voluptates eius unde,
+          eaque officiis magni commodi, voluptas aspernatur consequatur.
+        </p>
+        <p>
+          Maxime, fugit. Maiores, delectus aspernatur tenetur molestias rem in
+          dolorem eveniet, nostrum assumenda ipsam laudantium!
+        </p>
+        <p>
+          Culpa libero blanditiis ea recusandae quisquam mollitia sit
+          consectetur, maxime iusto expedita esse magni optio.
+        </p>
+        <p>
+          Sapiente nostrum quidem ex provident, nemo explicabo vel libero
+          dolores voluptas culpa earum. Iusto, animi.
+        </p>
+        <p>
+          Quam aliquid, voluptatem libero natus reiciendis neque dolorum,
+          assumenda eveniet voluptatibus labore alias, itaque voluptates?
+        </p>
+        <p>
+          Molestiae tenetur beatae vitae eos sint. Dolor perspiciatis, dolores
+          perferendis odit obcaecati nihil reprehenderit nemo?
+        </p>
+        <p>
+          Distinctio nobis quam necessitatibus itaque! Obcaecati qui nemo
+          accusantium voluptate corrupti repudiandae asperiores impedit quae!
+        </p>
+        <p>
+          Nesciunt cum veniam voluptatem id aliquam possimus, ea, labore
+          repudiandae eius nemo ipsa quos perferendis.
+        </p>
+        <p>
+          Consectetur illum, dignissimos corrupti explicabo quo sed, excepturi
+          placeat eveniet, totam ratione maxime temporibus sit.
+        </p>
+        <p>
+          Nulla sapiente, officia esse nam rem consectetur porro libero adipisci
+          minima neque nobis beatae dolore?
+        </p>
+        <p>
+          Sequi modi magni, ut, laboriosam commodi, pariatur veritatis rerum
+          magnam omnis ad recusandae iure et!
+        </p>
+        <p>
+          Sequi laborum atque rem deleniti. Quae repellat aliquam iste illo nisi
+          nesciunt. Omnis, tempora sapiente.
+        </p>
+      </div>
+      <div class="fiveWrap">
+        <!-- <small class="five">Lorem, ipsum dolor. for</small> -->
+
+        <table class="five">
+          <thead>
+            <tr>
+              <th>headin</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+            <tr>
+              <td>paul</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- top, left right bottom -->
+
+    <!-- kind of positioning  -->
+
+    <!-- static relative absolute fixed sticky -->
+  </body>
+</html>

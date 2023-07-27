@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+
+    .main {
+      background-color: red;
+      display: grid;
+      grid-template-columns: 100px auto 100px;
+      grid-template-rows: 100px 100px;
+
+      gap: 10px;
+    }
+
+    .main :nth-child(even) {
+      background-color: orange;
+    }
+
+    .main :nth-child(odd) {
+      background-color: green;
+    }
+
+    .main :nth-child(4) {
+      background-color: yellow;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    main :last-child {
+      grid-column: 3/5;
+      background-color: blue;
+    }
+  </style>
+  <body>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+      ipsam corrupti aspernatur perferendis? Delectus, facere tenetur, harum sit
+      ipsum quas voluptas eaque iure dolorem quasi facilis aut accusamus.
+      Delectus, magni.
+    </p>
+
+    <main class="main">
+      <section class="main_section">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </section>
+      <section class="main_section">
+        <p>Labore soluta reprehenderit sit rem!</p>
+      </section>
+      <section class="main_section">
+        <p>Sapiente impedit ea doloremque velit?</p>
+      </section>
+      <section class="main_section">
+        <p>Porro similique aperiam vel inventore!</p>
+      </section>
+      <section class="main_section">
+        <p>Quo provident in molestiae reprehenderit.</p>
+      </section>
+    </main>
+  </body>
+</html>

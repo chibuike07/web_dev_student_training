@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo class</title>
+    <style>
+      /*  */
+
+      .empty {
+        width: 100px;
+        height: 200px;
+        background-color: blue;
+      }
+
+      .empty:empty {
+        background-color: yellow;
+      }
+
+      .notEmpty:not(:empty) {
+        color: purple;
+      }
+
+      .container {
+        background-color: red;
+      }
+
+      .container :first-child {
+        color: blue;
+      }
+
+      .container :last-child {
+        color: aqua;
+      }
+
+      .container p:first-of-type {
+        color: aqua;
+      }
+
+      .link:link {
+        color: chartreuse;
+      }
+
+      .link:visited {
+        color: red;
+      }
+
+      .link:active {
+        color: brown;
+      }
+
+      .link:focus {
+        color: aqua;
+      }
+
+      .section .lists {
+        background-color: pink;
+      }
+
+      /* .lists :nth-child(n) {
+        color: orange;
+      } */
+
+      /* .lists :nth-child(3) {
+        color: orange;
+      } */
+      /* .lists :nth-child(odd) {
+        color: orange;
+      } */
+      /* .lists :nth-child(even) {
+        color: burlywood;
+      } */
+      /* .lists :nth-child(3n + 1) {
+        color: brown;
+      } */
+
+      /* .lists :nth-child(3n + 2) {
+        color: brown;
+      } */
+
+      .lists :hover {
+        color: blue;
+        text-decoration: underline;
+      }
+
+      /* .form input[type="checkbox"]:checked {
+        width: 400px;
+      } */
+
+      /* .form input:focus {
+        color: blue;
+      } */
+
+      .form input:disabled {
+        width: 300px;
+      }
+
+      :is(.group, .group2) h2 {
+        font-size: 3rem;
+        color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>css pseudo class</h2>
+    <!-- : -->
+    <!-- it is used to target a specified element or add specific feature to a specified element -->
+
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quasi?
+      </p>
+      <p>
+        Doloribus error ipsum voluptas suscipit earum voluptates reiciendis et
+        adipisci!
+      </p>
+      <p>
+        Impedit asperiores ex vero suscipit laboriosam deserunt iste quasi
+        necessitatibus.
+      </p>
+    </div>
+
+    <section class="section">
+      <a href="#" class="link">click me</a>
+      <ul class="lists">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Alias eveniet consequatur eum laborum?</li>
+        <li>Dolorem aliquam ipsa temporibus totam.</li>
+        <li>Veniam ipsum doloremque vitae qui!</li>
+        <li>Veniam ab itaque atque? Atque!</li>
+      </ul>
+    </section>
+
+    <form class="form">
+      <input type="text" placeholder="watch me change" class="text" disabled />
+      <input type="checkbox" class="check" />
+    </form>
+
+    <!-- empty -->
+    <div class="empty"></div>
+
+    <!-- not emepty -->
+
+    <div class="notEmpty">
+      <h2>i am not empty</h2>
+    </div>
+
+    <section class="group">
+      <h2>group heading</h2>
+    </section>
+    <div class="group2">
+      <h2>group heading two</h2>
+    </div>
+  </body>
+</html>

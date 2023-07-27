@@ -1,0 +1,105 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --primary_color: hsl(335.21deg, 68.16%, 51.96%);
+  --secondary_color: hsl(289.09deg, 29.73%, 36.27%);
+  --btn_color: hsl(220.8deg, 66.37%, 55.69%);
+  --white_color: #fff;
+}
+
+.container {
+  width: 100%;
+  min-width: 300px;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: inherit;
+  min-width: 300px;
+  min-height: inherit;
+  background: linear-gradient(
+    to right,
+    var(--primary_color),
+    var(--secondary_color)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading_wrapper {
+  min-height: 2em;
+  margin-bottom: 1rem;
+  width: 50%;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.heading_wrapper h2 {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+.form_wrapper {
+  width: 50%;
+  min-width: 300px;
+}
+
+.form {
+  background-color: var(--white_color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_input_wrap {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.input_wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender {
+  width: 45%;
+}
+
+.input_wrap_radios {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input_wrap_radios input[type="radio"] {
+  width: 15px;
+  font-size: 10px;
+}
+
+.input_wrap label {
+  margin-bottom: 0.8rem;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+
+.input_wrap input {
+  width: 18vw;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  height: 2em;
+  padding: 0.8rem;
+  border-radius: 5px;
+}

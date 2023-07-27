@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-color css</title>
+
+    <style>
+      .img_wrap {
+        background-image: url("../../weekTwo/dayOne/-1136756154399041456_97.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-color: red;
+        background-blend-mode: luminosity;
+        color: white;
+        width: 50%;
+        height: 80vh;
+        text-align: center;
+        animation: blink 2s linear infinite;
+      }
+
+      @keyframes blink {
+        from {
+          background-color: blue;
+        }
+
+        to {
+          background-color: orange;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>css background-color</h2>
+
+    <div class="img_wrap">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quaerat
+        temporibus earum accusamus, ipsum ipsa ex optio soluta. Molestias harum
+        culpa deleniti doloremque beatae vel rem, explicabo nostrum quo non!
+      </p>
+    </div>
+  </body>
+</html>

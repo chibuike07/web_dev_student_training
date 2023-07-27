@@ -1,0 +1,113 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 60%;
+  min-height: 60vh;
+  background-color: black;
+}
+.second_wrap {
+  /* width: inherit;
+  height: inherit; */
+}
+
+.heading_one {
+  color: yellow;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  /* gap: 40rem; */
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap; */
+  /* align-items: flex-end; */
+  /* flex-direction: row; */
+}
+
+.first {
+  font-size: larger;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.second {
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+.numeric {
+  /* font-weight: 300; */
+  color: yellow;
+  display: flex;
+  justify-content: center;
+}
+
+.numeric_bold {
+  font-family: cursive;
+  font-size: 13rem;
+  position: absolute;
+  top: 3%;
+}
+
+.text_color {
+  position: absolute;
+  top: 42.5%;
+  font-size: 1.5rem;
+}
+
+.years_inside {
+  color: yellow;
+  display: flex;
+  justify-content: center;
+}
+
+.inside {
+  position: absolute;
+  top: 27%;
+  left: 33%;
+}
+
+.circle_edit {
+  padding: 2rem;
+  position: absolute;
+  top: 42%;
+}
+
+.sold {
+  color: rgb(146, 146, 7);
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  font-size: large;
+}
+
+.people {
+  position: absolute;
+  top: 47.5%;
+  left: 20%;
+}
+
+.trusted {
+  color: rgb(146, 146, 7);
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  font-size: large;
+}
+
+.verified {
+  position: absolute;
+  top: 47.5%;
+  left: 42%;
+}
+
+.premium {
+  color: rgb(146, 146, 7);
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  font-size: large;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo element</title>
+
+    <style>
+      /* .para::first-letter {
+        font-size: 3rem;
+        color: blue;
+      } */
+      /* .para::first-line {
+        font-size: 3rem;
+        color: brown;
+      } */
+
+      /* .para::selection {
+        color: brown;
+        background-color: yellow;
+      } */
+
+      .list::marker {
+        color: blue;
+      }
+
+      .para::before {
+        content: "hello world";
+        color: green;
+      }
+
+      .test {
+        background-color: orange;
+        height: 3em;
+        width: 30%;
+      }
+
+      .test::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        position: absolute;
+        top: 51%;
+        left: 25%;
+        clip-path: polygon(0 0, 45% 64%, 100% 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>pseudo element</h2>
+
+    <!-- :: -->
+
+    <!-- it is used to target a specified section of an element -->
+
+    <p class="para">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
+      voluptatem.
+    </p>
+
+    <li class="list">hello</li>
+    <li class="list">hello</li>
+    <li class="list">hello</li>
+
+    <section class="test"><small>hello there i am small</small></section>
+  </body>
+</html>

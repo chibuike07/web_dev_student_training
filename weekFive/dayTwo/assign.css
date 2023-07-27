@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.Container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+
+.wrapper {
+  background-color: green;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* align-items: normal; */
+  padding: 1rem 2rem 15rem;
+  width: 20%;
+  min-height: inherit;
+}
+
+.header {
+  color: aliceblue;
+}
+
+.logo_one {
+  color: aliceblue;
+}
+
+.letter {
+  padding: 1rem;
+}
+
+.logo_two {
+  color: aliceblue;
+}
+
+.button_num {
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 2rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 20.5%;
+  left: 14%;
+}
+.Notification {
+  padding: 1.3rem;
+}
+
+.logo_three {
+  color: aliceblue;
+}
+
+.Analytics {
+  padding: 1rem;
+}
+
+.logo_four {
+  color: aliceblue;
+}
+
+.Reports {
+  padding: 1rem;
+}
+
+.logo_five {
+  color: aliceblue;
+}
+
+.Orders {
+  padding: 1rem;
+}
+
+.logo_six {
+  color: aliceblue;
+}
+
+.User_reports {
+  padding: 1.2rem;
+}
+
+.logo_seven {
+  color: aliceblue;
+}
+
+.manage {
+  padding: 1rem;
+}

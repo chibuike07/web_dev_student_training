@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>introduction to css</title>
+  </head>
+  <body>
+    <h1>introduction to css</h1>
+
+    <!-- inline css, internal; external -->
+
+    <!-- inline is the one we use the style attribute to add styling -->
+    <!-- internal css is the one we use the style tag to add styling -->
+    <!-- internal css is the one we import the css file to add styling -->
+    <!-- it comes in key-value pair; -->
+    <div style="background-color: blue">
+      <p
+        style="
+          color: red;
+          font-size: 3rem;
+          text-transform: uppercase;
+          text-decoration: line-through;
+        "
+      >
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
+        distinctio!
+      </p>
+    </div>
+
+    <img
+      src="./-1136756154399041456_97.jpg"
+      alt="cat look"
+      style="border-radius: 50%"
+    />
+    <img
+      src="./-1136756154399041456_97.jpg"
+      alt="cat look"
+      style="
+        border-radius: 20px;
+        width: 300px;
+        height: 300px;
+        box-shadow: 10px 10px 5px red;
+      "
+    />
+
+    <input
+      type="text"
+      placeholder="text"
+      style="border-width: 10px; border-color: yellow; outline-color: purple"
+    />
+
+    <div
+      style="
+        width: 200px;
+        height: 300px;
+        border: 5px dashed yellow;
+        box-shadow: inset 0px 0px 5px red;
+        padding: 1rem;
+      "
+    >
+      <p style="margin-left: 2rem">box box-shadow</p>
+    </div>
+
+    <p style="text-align: center">Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>

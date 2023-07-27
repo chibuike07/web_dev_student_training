@@ -1,0 +1,46 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: orange;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.container :nth-child(n) {
+  width: 30%;
+  min-width: 250px;
+  height: max-content;
+  background-color: green;
+  /* box-shadow: 0px 0px 5px #ff0000; */
+  filter: drop-shadow(10px 10px 10px red);
+  /* padding: 0.2rem; */
+  /* flex-grow: 0.8; */
+}
+
+@media only screen and (max-width: 500px) {
+  .container :nth-child(n) {
+    flex-grow: 0.8;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .container :nth-child(n) {
+    /* flex-grow: 0.8; */
+    background-color: purple;
+  }
+}
+
+@media only screen and (max-width: 500px) and (orientation: landscape) {
+  .container :nth-child(n) {
+    /* flex-grow: 0.8; */
+    background-color: red;
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>introduction to img</title>
+  </head>
+  <body>
+    <h1>introduction to images</h1>
+    <img
+      src="./-1136756154399041456_97.jpg"
+      alt="a teddy pear"
+      type="image/jpeg"
+      width="100px"
+      height="100px"
+      sizes="(max-width:500px) 100vw, (max-width:900px) 50vw"
+      srcset="./-1136756154399041456_97.jpg 500w, ./medium_imag.jpg 1000w"
+    />
+
+    <picture>
+      <source
+        srcset="./medium_imag.jpg"
+        media="(max-width: 500px)"
+        sizes="100vw"
+      />
+
+      <source
+        srcset="./-1136756154399041456_97.jpg"
+        media="(max-width: 800px)"
+        sizes="100vw"
+      />
+
+      <img src="./-1870893395.gif" alt="a gif image of the cloud" />
+    </picture>
+  </body>
+</html>
