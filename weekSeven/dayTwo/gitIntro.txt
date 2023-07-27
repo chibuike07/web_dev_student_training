@@ -1,2 +1,3 @@
 git init => initialize to git into your project
 gits status => get the latest status of your project
+git commit -m "commit message" to commit message to github
