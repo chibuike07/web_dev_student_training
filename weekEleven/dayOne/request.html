@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>request</title>
+  </head>
+  <body>
+    <h2>request</h2>
+
+    <form action="javascript:;">
+      <input
+        type="text"
+        placeholder="add todo"
+        name="todo"
+        id="text"
+        required
+      />
+      <button onclick="handleAddTodo()">add todo</button>
+    </form>
+
+    <div>
+      <button onclick="updateTodo()">update</button>
+    </div>
+
+    <div>
+      <ul id="lists"></ul>
+    </div>
+    <script type="text/javascript">
+      const todoArray = [];
+      // api => application programming interface
+      //   it is a gate through the client interacts with the server;
+      //   http/https;
+
+      // https://jsonplaceholder.typicode.com
+
+      let todoIdHolder = {};
+
+      const handleAddTodo = () => {
+        const textInput = document.querySelector("#text");
+
+        if (textInput.value === "") return window.alert("Please enter todo");
+
+        const random = Math.floor(Math.random() * 100);
+        const id = `${textInput.value.slice(0, 3)}-${random}`;
+
+        todoArray.push({ text: textInput.value, id: id });
+        getTodo();
+        // fetch("http://localhost:4000/todo", {
+        //   body: JSON.stringify({ text: textInput.value, id: id }),
+        //   method: "POST",
+        //   headers: {
+        //     "Content-Type": "application/json",
+        //   },
+        // })
+        //   .then((res) => res.json())
+        //   .then((data) => {
+        //     getTodo();
+        //     window.alert(data.message);
+        //   })
+        //   .catch((err) => console.error(err.message));
+      };
+
+      const getTodo = () => {
+        // get the ul element from the document
+        const ulElement = document.querySelector("#lists");
+
+        // clear the list element
+        ulElement.innerHTML = "";
+
+        // rendering the todo to the browser
+        todoArray.length > 0 &&
+          todoArray.forEach((todo, idx) => {
+            // create the list element
+            const liElement = document.createElement("li");
+
+            // add the text to the list element
+            liElement.textContent = todo.text;
+
+            // what will happen will a lis element is clicked
+            liElement.addEventListener("click", (e) => {
+              console.log("e :>> ", e.target.textContent);
+              handleUpdateTodo({
+                text: e.target.textContent,
+                id: todo.id,
+                idx: idx,
+              });
+            });
+
+            // add the list element to the ul element
+            ulElement.appendChild(liElement);
+          });
+        // alert("No todo found!");
+
+        // fetch("http://localhost:4000/todo", {
+        //   headers: {
+        //     "Content-Type": "application/json",
+        //   },
+        // })
+        //   .then((res) => res.json())
+        //   .then((todoData) => {
+        //     // get the todo from an api
+        //     const { data } = todoData;
+
+        // // get the ul element from the document
+        // const ulElement = document.querySelector("#lists");
+
+        // // clear the list element
+        // ulElement.innerHTML = "";
+
+        // // rendering the todo to the browser
+        // data.length > 0
+        //   ? data.forEach((todo) => {
+        //       // create the list element
+        //       const liElement = document.createElement("li");
+
+        //       // add the text to the list element
+        //       liElement.textContent = todo.text;
+
+        //       // what will happen will a lis element is clicked
+        //       liElement.addEventListener("click", (e) => {
+        //         console.log("e :>> ", e.target.textContent);
+        //         handleUpdateTodo({
+        //           text: e.target.textContent,
+        //           id: todo.id,
+        //         });
+        //       });
+
+        //       // add the list element to the ul element
+        //       ulElement.appendChild(liElement);
+        //     })
+        //       : window.alert("todo is empty");
+        //     // console.log("data :>> ", data);
+        // });
+      };
+
+      const handleUpdateTodo = ({ text, id, idx }) => {
+        // console.log("text :>> ", text);
+        // console.log("id :>> ", id);
+        // const updatedText = window.prompt("update todo", text);
+        // console.log("updatedText :>> ", updatedText);
+
+        const textInput = document.querySelector("#text");
+        textInput.value = text;
+        todoIdHolder["idx"] = idx;
+        todoIdHolder["id"] = id;
+        console.log("todoIdHolder :>> ", todoIdHolder);
+      };
+
+      console.log("todoIdHolder :>> ", todoIdHolder);
+
+      const updateTodo = () => {
+        const textInput = document.querySelector("#text");
+
+        todoArray.splice(todoIdHolder.idx, 1, {
+          text: textInput.value,
+          id: todoIdHolder.id,
+        });
+        console.log("todoArray :>> ", todoArray);
+        getTodo();
+
+        // fetch(
+        //   `http://localhost:4000/todo/${todoIdHolder.id}?todo=${textInput.value}`,
+        //   {
+        //     method: "PUT",
+        //     headers: {
+        //       "content-type": "application/json",
+        //     },
+        //   }
+        // )
+        //   .then((res) => res.json())
+        //   .then((data) => {
+        //     getTodo();
+        //     console.log("data.data :>> ", data.data);
+        //   });
+      };
+      document.addEventListener("DOMContentLoaded", getTodo);
+    </script>
+  </body>
+</html>

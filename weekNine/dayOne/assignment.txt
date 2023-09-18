@@ -1,0 +1,14 @@
+
+1. create an array of strings that includes "your name" at index (3) and find the following:
+a. index of your name,
+b. get all index of your name;
+
+2. add 2 new item into the above created array;
+
+3. sort the above array in ascending and descending order
+
+4. return each item in the above array
+
+5. get a substring from the above array (from index  to index 4);
+
+6. remove the last item from the above array.

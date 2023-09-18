@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom model</title>
+  </head>
+  <body>
+    <div>
+      <div class="heading_wrap">
+        <h2 class="heading" id="headingId">document object model (dom)</h2>
+      </div>
+
+      <form action="javascript:;">
+        <input
+          type="text"
+          name="name"
+          placeholder="name"
+          id="input"
+          value="princewill"
+          oninput="getUserValue(this)"
+        />
+
+        <button onclick="submitForm()">submit</button>
+      </form>
+    </div>
+
+    <script type="text/javascript">
+      // accessing text elements
+      const heading = document.getElementById("headingId");
+      heading.style.color = "red";
+      heading.style.textTransform = "uppercase";
+      heading.textContent = "hello world";
+      const headingWrap = document.querySelector(".heading_wrap");
+      console.log("headingWrap.innerHTML :>> ", headingWrap.innerHTML);
+      console.log("headingWrap.innerText :>> ", headingWrap.innerText);
+      console.log("headingWrap.textContent :>> ", headingWrap.textContent);
+      console.log("headingWrap :>> ", headingWrap);
+      console.log("heading :>> ", heading);
+      console.log("heading.innerHTML :>> ", heading.innerHTML);
+      console.log("heading.innerText :>> ", heading.innerText);
+      console.log("heading.textContent :>> ", heading.textContent);
+
+      //   accessing form fields
+      const inputField = document.querySelector("#input");
+      //   inputField.value = "bucas";
+      console.log("inputField.value :>> ", inputField.value);
+      console.log("inputField.value :>> ", inputField.value);
+
+      const getUserValue = (event) => {
+        console.log("event :>> ", event);
+        console.log("event.value :>> ", event.value);
+        // console.log("event.value :>> ", event.target.value);
+      };
+
+      //   inputField.addEventListener("input", getUserValue);
+
+      const submitForm = (e) => {
+        const inputField = document.querySelector("#input");
+        console.log("e :>> ", e);
+        console.log("inputField.value :>> ", inputField.value);
+      };
+    </script>
+  </body>
+</html>

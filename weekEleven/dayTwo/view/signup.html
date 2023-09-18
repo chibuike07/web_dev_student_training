@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>store house</title>
+    <link rel="stylesheet" href="../styles/registrationStyles/store.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <form action="javascript:;" class="wp_form">
+          <input
+            type="text"
+            name="email"
+            placeholder="enter email"
+            id="email"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="enter password"
+            id="password"
+            required
+          />
+          <select
+            type="text"
+            name="category"
+            placeholder="enter category"
+            id="category"
+            required
+          ></select>
+        </form>
+        <div class="wp_fm_btn_wrap">
+          <button>login</button>
+          <button onclick="handleSignup()">join us</button>
+        </div>
+      </div>
+    </div>
+    <!-- https://fakestoreapi.com/products
+'https://fakestoreapi.com/products?sort=desc
+https://fakestoreapi.com/products/categories
+https://fakestoreapi.com/products/category/jewelery
+https://fakestoreapi.com/carts
+https://fakestoreapi.com/carts/5
+https://fakestoreapi.com/carts?startdate=2019-12-10&enddate=2020-10-10
+'https://fakestoreapi.com/carts/user/2
+-->
+    <script src="../js/util.js"></script>
+    <script src="../js/signup.js" type="text/javascript"></script>
+  </body>
+</html>

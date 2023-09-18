@@ -1,0 +1,6 @@
+1. declare a variable named currency;
+2. assign a value to the variable named currency;
+3. create a car object that has the following properties; name, type, tires, doors, company, category, color;
+4. declare an array of beverages (5 lists);
+5. write a function that returns an object
+6. declare an array of multiple users properties (name, age, isFair) (3 list);

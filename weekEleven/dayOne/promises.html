@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>promises</title>
+  </head>
+  <body>
+    <h1>promises</h1>
+    <script type="text/javascript">
+      // asynchronous
+      let one = "1";
+      let tow = "2";
+      console.log("tow :>> ", tow);
+      window.setTimeout(() => {
+        console.log("called after timeout");
+      }, 3000);
+
+      let done = true;
+
+      const itIsDone = new Promise((resolve, reject) => {
+        if (done) {
+          resolve("it is done");
+        } else {
+          reject("sorry not done");
+        }
+      });
+
+      console.log("itIsDone :>> ", itIsDone);
+
+      //   .then
+      itIsDone
+        .then((res) => console.log("res >> ", res))
+        .catch((err) => console.error(err))
+        .finally(() => console.log("all promises resolved"));
+
+      // async await
+      const handlePromise = async () => {
+        const result = await itIsDone;
+        console.log("result :>> ", result);
+      };
+
+      handlePromise();
+    </script>
+  </body>
+</html>

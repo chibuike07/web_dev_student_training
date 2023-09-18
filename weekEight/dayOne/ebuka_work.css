@@ -1,0 +1,254 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary_color: #282727;
+  --active_color: #692810;
+  --bg_color: #fff;
+  --second_color: #007bff;
+  --footer_color: #6c757d;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: inherit;
+  min-height: inherit;
+}
+
+.wrapper_one {
+  background-color: var(--primary_color);
+}
+
+.lists {
+  /* background-color: red; */
+  display: flex;
+  /* justify-content: space-around; */
+  /* width: 50%; */
+}
+
+.head_nav {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  padding-left: 5rem;
+  padding-top: 1rem;
+  /* padding: 1rem; */
+  /* flex-direction: row; */
+  /* min-height: 0em; */
+}
+
+.head_nav img {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-around;
+  width: 10%;
+  height: 10vh;
+}
+
+.head_nav_lists {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  padding: 2rem 2rem;
+  font-size: small;
+  color: #fff;
+  margin-bottom: 20%;
+  flex-direction: row;
+}
+
+.header_one {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  color: var(--bg_color);
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  color: var(--bg_color);
+  margin-bottom: 1rem;
+  /* width: 20%; */
+  /* margin-bottom: 10%; */
+}
+
+.paragraph_one {
+  display: flex;
+  justify-content: center;
+  color: var(--bg_color);
+}
+
+.paragraph_one span {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: var(--bg_color);
+}
+
+.certificate {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary_color);
+  /* margin-bottom: 7rem; */
+  height: 20vh;
+  color: var(--bg_color);
+  /* position: relative; */
+}
+
+.form_section {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(233, 230, 230);
+}
+
+.form_box {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  /* background-color: green; */
+  /* flex: 3; */
+}
+
+.form_box_wp {
+  /* background-color: orange; */
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  padding: 0rem 2rem;
+  /* align-items: center; */
+}
+
+.header_jup {
+  background-color: var(--active_color);
+  padding: 1rem;
+  color: var(--bg_color);
+  width: 120%;
+  /* height: 20%; */
+}
+
+.paragraph_jup {
+  background-color: var(--bg_color);
+  width: 120%;
+  display: flex;
+  line-height: 1.5rem;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+
+.jupeb_list_nav {
+  background-color: var(--bg_color);
+  padding: 1rem;
+  width: 120%;
+}
+
+.jupeb_lists {
+  list-style: none;
+  line-height: 2rem;
+  color: var(--second_color);
+}
+
+.header_regular {
+  background-color: var(--active_color);
+  padding: 1rem;
+  color: var(--bg_color);
+  width: 120%;
+  min-height: 10vh;
+}
+
+.paragraph_regular {
+  background-color: var(--bg_color);
+  width: 120%;
+  display: flex;
+  line-height: 1.5rem;
+  padding: 1rem 1rem 1rem;
+  padding-right: 2rem;
+}
+
+.Regular_list_nav {
+  background-color: var(--bg_color);
+  padding: 1rem;
+  width: 120%;
+}
+
+.Regular_lists {
+  list-style: none;
+  line-height: 2rem;
+  color: var(--second_color);
+}
+
+.header_msp {
+  background-color: var(--active_color);
+  padding: 1rem;
+  color: var(--bg_color);
+  width: 120%;
+  min-height: 13vh;
+}
+
+.paragraph_msp {
+  background-color: var(--bg_color);
+  width: 120%;
+  display: flex;
+  line-height: 1.5rem;
+  padding: 1rem 1rem 1rem;
+  padding-right: 2rem;
+}
+
+.msp_list_nav {
+  background-color: var(--bg_color);
+  padding: 1rem;
+  width: 120%;
+}
+
+.msp_lists {
+  list-style: none;
+  line-height: 2rem;
+  color: var(--second_color);
+}
+
+.header_pg {
+  background-color: var(--active_color);
+  padding: 1rem;
+  color: var(--bg_color);
+  width: 120%;
+  min-height: 10vh;
+}
+
+.paragraph_pg {
+  background-color: var(--bg_color);
+  width: 120%;
+  display: flex;
+  line-height: 1.5rem;
+  padding: 1rem 1rem 1rem;
+  padding-right: 2rem;
+}
+
+.pg_list_nav {
+  background-color: var(--bg_color);
+  padding: 1rem;
+  width: 120%;
+}
+
+.pg_lists {
+  list-style: none;
+  line-height: 2rem;
+  color: var(--second_color);
+}
+
+.footer {
+  background-color: var(--footer_color);
+  min-height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

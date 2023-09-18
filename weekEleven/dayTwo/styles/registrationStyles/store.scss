@@ -1,0 +1,79 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: blue;
+  --bgColor: #ffffff;
+}
+
+.container {
+  background-color: red;
+  width: 100%;
+  min-height: 100vh;
+
+  .wrapper {
+    background-color: green;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/registrationbgImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0, 0, 255, 0.7);
+    background-blend-mode: overlay;
+    gap: 1rem;
+    .wp_form {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      input {
+        width: 80%;
+        height: 2em;
+        padding: 1rem;
+        border-radius: 0.7rem;
+        border: none;
+        outline-color: var(--primaryColor);
+        &::placeholder {
+          text-transform: capitalize;
+        }
+      }
+
+      select {
+        width: 80%;
+        height: 2em;
+        padding: 0rem 1rem;
+        border-radius: 0.7rem;
+        border: none;
+        outline-color: var(--primaryColor);
+        &::placeholder {
+          text-transform: capitalize;
+        }
+      }
+    }
+    .wp_fm_btn_wrap {
+      width: 40%;
+      min-width: 300px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5rem;
+      button {
+        width: 100px;
+        height: 2em;
+        text-transform: capitalize;
+        border: none;
+        outline: none;
+        background-color: var(--primaryColor);
+        color: var(--bgColor);
+        border-radius: 0.2rem;
+      }
+    }
+  }
+}
