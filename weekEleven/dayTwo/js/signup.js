@@ -63,3 +63,7 @@ const handleSignup = () => {
     window.location.replace("../view/signin.html");
   }
 };
+
+const goToSignin = () => {
+  window.location.replace("../view/signin.html");
+};

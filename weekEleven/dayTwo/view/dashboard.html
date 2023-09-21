@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard/dashboard.css" />
   </head>
   <body>
     <div class="container">
       <div class="wrapper">
-        <h1>dashboard</h1>
+        <header class="wp_header">
+          <h1>welcome to dashboard</h1>
+        </header>
+
+        <header class="wp_header_category">
+          <h2 id="selectedCategory"></h2>
+        </header>
+
+        <article id="product" class="wp_product"></article>
       </div>
     </div>
 
+    <script src="../js/util.js"></script>
     <script src="../js/dashboard.js"></script>
   </body>
 </html>

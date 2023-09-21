@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display product</title>
+    <link
+      rel="stylesheet"
+      href="../styles/displayProductStyles/displayProductStyles.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <header class="wp_header_category">
+          <h2 id="heading"></h2>
+        </header>
+
+        <div class="wp_main">
+          <article id="product" class="wp_product"></article>
+          <main>
+            <header>
+              <h3>Fill in your details</h3>
+            </header>
+            <form action="javascript:;">
+              <div class="fm_input_wrap">
+                <label for="name">Enter your name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter name"
+                  required
+                />
+              </div>
+              <div class="fm_input_wrap">
+                <label for="address">Enter label</label>
+                <input
+                  type="text"
+                  placeholder="Enter address"
+                  id="address"
+                  required
+                />
+              </div>
+              <div class="fm_input_wrap">
+                <label for="phone">Enter phone</label>
+                <input
+                  type="text"
+                  placeholder="Enter phone"
+                  id="phone"
+                  required
+                />
+              </div>
+              <div class="fm_input_wrap">
+                <label for="number">select product count</label>
+                <input
+                  type="number"
+                  placeholder="Enter product count"
+                  id="count"
+                  value="1"
+                  required
+                />
+              </div>
+
+              <div class="fm_btn_wrap">
+                <button onclick="handleConfirmProductPurchase()">
+                  confirm
+                </button>
+              </div>
+            </form>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="../js/util.js"></script>
+    <script src="../js/displayProduct.js"></script>
+  </body>
+</html>

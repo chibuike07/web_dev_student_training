@@ -9,12 +9,13 @@
 
 const getUserProductsByCategories = () => {
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-  const getCategories = [...currentUser.category, "women cloth"].map(
-    (category) => {
-      return `${category}+`;
-    }
-  );
+  const categoryHeading = document.querySelector("#selectedCategory");
+  const getCategories = [currentUser.category].map((category) => {
+    return `${category}`;
+  });
 
+  categoryHeading.textContent = getCategories[0];
+  const clickable = true;
   //   fetch products based on users category
   fetch(
     `https://fakestoreapi.com/products/category/${currentUser.category[0]}`,
@@ -27,8 +28,9 @@ const getUserProductsByCategories = () => {
   )
     .then((res) => res.json())
     .then((data) => {
-      console.log("data", data);
-    });
+      renderProduct({ data, clickable });
+    })
+    .catch((err) => console.error(err));
 };
 
 document.addEventListener("DOMContentLoaded", getUserProductsByCategories);

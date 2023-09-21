@@ -1,0 +1,64 @@
+@import url("../dashboard/dashboard.css");
+.wp_main {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.wp_main .wp_product {
+  flex: 0;
+  min-width: 300px;
+}
+@media only screen and (max-width: 765px) {
+  .wp_main .wp_product {
+    flex: 1;
+  }
+}
+.wp_main main {
+  flex: 0.7;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.wp_main main header {
+  height: 3em;
+}
+.wp_main main form {
+  transform: translateY(10%);
+  width: 80%;
+  margin-bottom: 2rem;
+  padding: 1rem 0rem;
+}
+.wp_main main form .fm_input_wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.wp_main main form .fm_input_wrap :is(input) {
+  margin-bottom: 0.5rem;
+  padding: 0rem 0.2rem;
+  width: 80%;
+  height: 2em;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 5px gray;
+}
+.wp_main main form .fm_btn_wrap {
+  width: 83%;
+  display: flex;
+  justify-content: flex-end;
+}
+.wp_main main form .fm_btn_wrap button {
+  width: 100px;
+  background-color: blue;
+  border-color: blue;
+  color: #fff;
+  height: 2em;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 765px) {
+  .wp_main main form {
+    width: 100%;
+  }
+}/*# sourceMappingURL=displayProductStyles.css.map */

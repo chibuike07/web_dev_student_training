@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.container .wrapper {
+  width: 90%;
+  min-height: 100vh;
+  padding: 0rem 1rem;
+}
+.container .wrapper .wp_header h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+.container .wrapper .wp_header_category h2 {
+  text-transform: capitalize;
+}
+.container .wrapper .wp_product {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0rem;
+  gap: 1rem;
+}
+.container .wrapper .wp_product .pt_card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 30%;
+  box-shadow: 0px 0px 5px gray;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .container .wrapper .wp_product .pt_card {
+    max-width: 100%;
+  }
+}
+.container .wrapper .wp_product .pt_card img {
+  width: 100%;
+  height: 25em;
+}
+.container .wrapper .wp_product .pt_card .pt_cd_tt_header small {
+  text-transform: capitalize;
+  border-radius: 0.3rem;
+  background-color: blue;
+  padding: 0.3rem;
+  color: #fff;
+}/*# sourceMappingURL=dashboard.css.map */
